@@ -1,6 +1,5 @@
 #include "sha256.h"
 #include <stdint.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -102,6 +101,5 @@ uint64_t solve_pow(const char *salt, const char *target) {
     }
   }
 
-  fprintf(stderr, "Solution not found!\n");
   exit(1);
 }
